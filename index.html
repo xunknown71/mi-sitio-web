@@ -3,18 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mi Sitio Web</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        nav {
+            background: white;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            color: #111827;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 35px 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        section p {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>¡Bienvenido a mi sitio web!</h1>
+    <header>
+        <h1>Mi Sitio Web</h1>
+        <p>Bienvenido a mi espacio en Internet</p>
+    </header>
 
-    <p>Este es mi primer sitio web creado desde mi teléfono.</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-    <h2>Sobre mí</h2>
+    <section id="inicio">
+        <h2>Bienvenido</h2>
+        <p>
+            Este es mi primer sitio web creado desde mi teléfono.
+            Estoy aprendiendo a desarrollar páginas web.
+        </p>
 
-    <p>Estoy aprendiendo a crear sitios web.</p>
+        <a class="boton" href="#sobre">Conocer más</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre mí</h2>
+        <p>
+            Aquí puedes escribir quién eres, qué haces,
+            cuáles son tus objetivos y qué quieres ofrecer
+            a las personas que visiten tu página.
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <p>
+            Puedes utilizar esta sección para presentar
+            tus servicios, proyectos o productos.
+        </p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+            Puedes colocar aquí tus datos de contacto
+            y tus redes sociales.
+        </p>
+
+        <a class="boton" href="mailto:tucorreo@gmail.com">
+            Enviarme un correo
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Sitio Web</p>
+    </footer>
 
 </body>
-</html>
+    </html>
